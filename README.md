@@ -3,8 +3,9 @@ lib_nrf24
 
 
 ###########Janyary 2020 I have updated the library to support the newer modules###########
-## May 2018 - This is no longer being maintained by the original author.
-## Please feel free to fork, copy, adapt if you find it useable
+
+shitprogrammer taking over this library from challenger Ali 20/1/2022
+for own use 
 
 Python2/3 library for NRF24L01+ Transceivers
 
