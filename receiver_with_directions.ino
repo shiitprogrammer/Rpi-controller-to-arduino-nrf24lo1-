@@ -37,32 +37,25 @@ void removezeros() {
     
     }
     data.remove(0, i);
-    //Serial.println(appCmd);
+    
     size_t nextIdx = 1; //step over leading {
     nextIdx = data.stoken(value, nextIdx, "', ");
-    nextIdx++; //step over delimiter
+    nextIdx++; 
     nextIdx = data.stoken(type, nextIdx, "', ");
-    nextIdx++; //step over delimiter
+    nextIdx++;
     nextIdx = data.stoken(id, nextIdx, "', ");
-    nextIdx++; //step over delimiter
-    // can trim tokens if needed e.g. token1.trim()
+    nextIdx++;
+    
     String arduinostrval = value.c_str();
     int val = arduinostrval.toInt();
-    
-    //Serial.print(val);
-    //Serial.print("/");
-    
+  
     String arduinostrtype = type.c_str();
     int typeval = arduinostrtype.toInt();
-
-    //Serial.print(typeval);
-    //Serial.print("/");
-    
-    
+ 
     String arduinostrid = id.c_str();
     int idval = arduinostrid.toInt();
 
-    //Serial.println(idval);
+
      switch (typeval) {
     case 1: // buttons
       
