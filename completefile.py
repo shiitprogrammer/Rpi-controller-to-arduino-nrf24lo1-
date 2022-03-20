@@ -182,14 +182,13 @@ def print_event(e):
             msg = 'time {:<16} +++++++++ {} ++++++++'
         else:
             msg = 'time {:<16} --------- {} --------'
-       # print(msg.format(e.timestamp(), ecodes.SYN[e.code]))
+       
     else:
         if e.type in ecodes.bytype:
             codename = ecodes.bytype[e.type][e.code]
         else:
             codename = '?'
         evfmt = 'time {:<16} type {} ({}), code {:<4} ({}), value {}'
-        #print(evfmt.format(e.timestamp(), e.type, ecodes.EV[e.type], e.code, codename, e.value))
         val = str(int(e.value / 120))
         typ = str(e.type)
         codes = str(e.code)
