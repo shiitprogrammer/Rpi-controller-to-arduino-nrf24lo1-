@@ -20,10 +20,6 @@ RF24 radio(9, 8);
 char rcvd[32] = "";
 
 
-void right90() {
-
-    
-}
 
 
 
